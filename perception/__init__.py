@@ -26,6 +26,7 @@ from .detector import RgbdDetection, RgbdDetector, RgbdForegroundMaskDetector, R
 from .camera_sensor import CameraSensor, VirtualSensor, TensorDatasetVirtualSensor
 from .webcam_sensor import WebcamSensor
 
+'''
 try:
     from .kinect2_sensor import Kinect2PacketPipelineMode, Kinect2FrameMode, Kinect2RegistrationMode, Kinect2DepthMode, Kinect2BridgedQuality, Kinect2Sensor, KinectSensorBridged, VirtualKinect2Sensor, Kinect2SensorFactory, load_images
 except Exception:
@@ -36,12 +37,12 @@ try:
     from .primesense_sensor import PrimesenseSensor, PrimesenseSensor_ROS, PrimesenseRegistrationMode
 except Exception:
     logging.warning('Unable to import Primsense sensor modules! Likely due to missing OpenNI2.')
-
+'''
 try:
     from .realsense_sensor import RealSenseSensor
 except Exception:
     logging.warning('Unable to import RealSense sensor modules!')
-
+'''
 try:
     from .ensenso_sensor import EnsensoSensor
 except Exception:
@@ -63,7 +64,7 @@ try:
     from .weight_sensor import WeightSensor
 except:
     logging.warning('Unable to import weight sensor modules!')
-
+'''
 from .video_recorder import VideoRecorder
 
 __all__ = [
